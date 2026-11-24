@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo da Velha</title>
+</head>
+<body>
+
+  <h1>Jogo da Velha</h1>
+
+  <!-- tela de configuracao -->
+  <div id="config">
+    <form id="form-config">
+      <p>
+        <label for="nome1">Nome do jogador 1 (X):</label><br>
+        <input type="text" id="nome1">
+      </p>
+
+      <p>
+        <label for="modo">Modo de jogo:</label><br>
+        <select id="modo">
+          <option value="computador">Contra o computador</option>
+          <option value="dupla">Em dupla</option>
+        </select>
+      </p>
+
+      <p id="campo-nome2" class="escondido">
+        <label for="nome2">Nome do jogador 2 (O):</label><br>
+        <input type="text" id="nome2">
+      </p>
+
+      <button type="submit">Começar</button>
+    </form>
+  </div>
+
+  <!-- tela do jogo -->
+  <div id="jogo" class="escondido">
+    <p id="placar"></p>
+    <p id="mensagem"></p>
+
+    <div id="tabuleiro">
+      <button class="casa" data-i="0"></button>
+      <button class="casa" data-i="1"></button>
+      <button class="casa" data-i="2"></button>
+      <button class="casa" data-i="3"></button>
+      <button class="casa" data-i="4"></button>
+      <button class="casa" data-i="5"></button>
+      <button class="casa" data-i="6"></button>
+      <button class="casa" data-i="7"></button>
+      <button class="casa" data-i="8"></button>
+    </div>
+
+    <br>
+    <button id="btn-de-novo">Jogar de novo</button>
+    <button id="btn-zerar">Zerar placar</button>
+    <button id="btn-trocar">Trocar jogadores</button>
+  </div>
+
+</body>
+</html>

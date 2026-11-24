@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  color: darkblue;
+}
+
+#tabuleiro {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  gap: 4px;
+}
+
+.casa {
+  width: 80px;
+  height: 80px;
+  font-size: 40px;
+  background-color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.casa:hover {
+  background-color: lightyellow;
+}
+
+#mensagem {
+  font-weight: bold;
+  color: green;
+}
+
+.escondido {
+  display: none;
+}
